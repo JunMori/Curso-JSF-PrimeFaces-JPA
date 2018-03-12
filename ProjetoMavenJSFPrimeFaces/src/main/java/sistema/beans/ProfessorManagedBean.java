@@ -2,9 +2,7 @@ package sistema.beans;
 
 import java.util.List;
 
-import sistema.modelos.Aluno;
 import sistema.modelos.Professor;
-import sistema.service.AlunoService;
 import sistema.service.ProfessorService;
 
 public class ProfessorManagedBean {

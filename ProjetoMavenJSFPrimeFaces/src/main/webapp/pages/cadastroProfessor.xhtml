@@ -17,12 +17,12 @@
 	  
 	  <h1><p:outputLabel value="#{msg['pages.cadastroProfessor.menu']}"/></h1>
 	  
-	  <h:form id="formAluno">	
+	  <h:form id="formProfessor">	
 	  <p:panelGrid columns="2">
       <p:outputLabel value="#{msg['pages.cadastroProfessor.id']}" />
       <p:inputText value="#{professorManagedBean.professor.id}"/>
 	  <p:outputLabel value="#{msg['pages.cadastroProfessor.nome']}" />
-      <p:inputText value="#{alunoManagedBean.professor.nome}"/>
+      <p:inputText value="#{professorManagedBean.professor.nome}"/>
       <p:outputLabel value="#{msg['pages.cadastroProfessor.disciplina']}" />
       <p:inputText value="#{professorManagedBean.professor.disciplina}"/>
 	  </p:panelGrid>
@@ -32,18 +32,18 @@
 	                 />
        </h:form>
 	
-   <p:dataTable value="#{professorManagedBean.alunos}"
+   <p:dataTable value="#{professorManagedBean.professor}"
                 var="aux"
                 id="tabelaProfessor"
    >
-      <p:column headerText="#{msg['pages.cadastroProfessor.id]}">
+      <p:column headerText="#{msg['pages.cadastroProfessor.id']}">
         <p:outputLabel value="#{aux.id}" />
       </p:column>
       <p:column headerText="#{msg['pages.cadastroProfessor.nome']}">
         <p:outputLabel value="#{aux.nome}" />
       </p:column>
       <p:column headerText="#{msg['pages.cadastroProfessor.disciplina']}">
-        <p:outputLabel value="#{aux.discplina}" />
+        <p:outputLabel value="#{aux.disciplina}" />
       </p:column>
       
    </p:dataTable>	
